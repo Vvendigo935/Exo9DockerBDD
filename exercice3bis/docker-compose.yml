@@ -27,11 +27,12 @@ services:
 
 
   app:
-    image: openjdk
-    container_name: api_ex3b
+    build:
+      context: .
+   # image: openjdk
+    container_name: ${MY_PROJECT_NAME}
     restart: always
-    ports:
-      - "8080:80"
+
 
 
 
